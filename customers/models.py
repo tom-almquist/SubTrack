@@ -29,3 +29,6 @@ class Customer(models.Model):
 		default=CONFIRMED,
 	)
 
+	def __str__(self):
+		return f"{self.first_name} {self.last_name}: {self.account_state}"
+
